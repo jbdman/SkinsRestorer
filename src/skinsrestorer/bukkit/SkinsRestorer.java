@@ -53,7 +53,7 @@ public class SkinsRestorer extends JavaPlugin implements Listener {
 		LocaleStorage.init(getDataFolder());
 		SkinStorage.init(getDataFolder());
 		getCommand("skinsrestorer").setExecutor(new AdminCommands());
-		getCommand("skin").setExecutor(new PlayerCommands());
+		getCommand("skinre").setExecutor(new PlayerCommands());
 		getServer().getPluginManager().registerEvents(new LoginListener(), this);
 		executor.scheduleWithFixedDelay(CooldownStorage.cleanupCooldowns, 0, 1, TimeUnit.MINUTES);
 	}
